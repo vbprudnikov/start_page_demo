@@ -31,16 +31,22 @@ class MyApp extends StatelessWidget {
 
       home: Scaffold(
 
-          body: Column(
+          body: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              image: DecorationImage(image:  AssetImage('assets/bg2.jpg'),
+                fit: BoxFit.fill,
+              )
+          ),
+
+          child: Column(
             children:  [
               SizedBox(height: 45),
 
-                  Center(
-                    child: SizedBox(
-                      width: 97,
-                      height: 98,
-                      child: Placeholder()),
-                  ),
+              SizedBox(
+                    width: 97,
+                    height: 98,
+                    child: Image(image: AssetImage('assets/sber.png'))),
               SizedBox(height: 20),
               Text('Введите логин (10 цифр)'),
               SizedBox(height: 30),
@@ -98,6 +104,7 @@ class MyApp extends StatelessWidget {
 
 
             ],
+          ),
           ),
       ),
     );
