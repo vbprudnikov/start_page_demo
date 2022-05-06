@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:start_page_demo/utils/global.dart';
 
 class SwitchDemoScreen extends StatefulWidget {
   const SwitchDemoScreen({Key? key}) : super(key: key);
@@ -30,6 +31,7 @@ class _SwitchDemoScreenState extends State<SwitchDemoScreen> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        theme: global_theme(),
         home: Scaffold(
       appBar: AppBar(),
       body: Center(
